@@ -3,13 +3,16 @@ int delayTime = 200;
 
 void setup()
 {
-  for (int i = 0; i < 7; i++) {
+  for (int i = 0; i < 7; i++) 
+  {
     pinMode(ledPins[i], OUTPUT);
   }
 }
 
-void loop() {
-  for (int i = 0; i < 7; i++) {
+void loop() 
+{
+  for (int i = 0; i < 7; i++) 
+  {
     int pin = ledPins[i];
     digitalWrite(pin, HIGH);
     delay(delayTime);
